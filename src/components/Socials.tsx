@@ -3,6 +3,7 @@ import {
 	RiGithubLine,
 	RiInstagramLine,
 	RiLinkedinLine,
+	RiStackOverflowLine,
 	RiTwitterLine,
 	RiYoutubeLine
 } from 'react-icons/ri';
@@ -24,6 +25,9 @@ const Socials = () => {
 			</Link>
 			<Link href={''} className="hover:text-accent transition-all duration-300">
 				<RiGithubLine />
+			</Link>
+			<Link href={''} className="hover:text-accent transition-all duration-300">
+				<RiStackOverflowLine />
 			</Link>
 		</div>
 	);
