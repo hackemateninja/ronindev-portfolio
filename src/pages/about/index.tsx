@@ -17,13 +17,16 @@ import {
 	SiElixir,
 	SiErlang,
 	SiFsharp,
+	SiGodotengine,
 	SiKotlin,
+	SiMonogame,
 	SiNextdotjs,
 	SiPhoenixframework,
 	SiSwift,
-	SiTypescript
+	SiThreedotjs,
 } from "react-icons/si";
 
+import Head from "next/head";
 import CountUp from "react-countup";
 
 //  data
@@ -37,7 +40,7 @@ const aboutData = [
         icons: [
           <FaHtml5 key={0} />,
           <FaCss3 key={1} />,
-					<SiTypescript key={2} />,
+					<SiThreedotjs key={2} />,
           <FaJs key={3} />,
           <FaReact key={4}/>,
           <SiNextdotjs key={5}/>,
@@ -56,7 +59,7 @@ const aboutData = [
 			{
         title: 'Game & Desktop development',
 				stage: '',
-        icons: [<SiFsharp key={0} />, <SiCsharp key={1} />],
+        icons: [<SiFsharp key={0} />, <SiCsharp key={1} />, <SiGodotengine key={2} />, <SiMonogame key={3} />],
       },
     ],
   },
@@ -154,7 +157,11 @@ const About = () => {
 	const year = date.getFullYear()
 
   return (
-		<div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+		<>
+			<Head>
+				<title>Ronindev About - Elixir developer</title>
+			</Head>
+			<div className="h-full bg-primary/30 py-32 text-center xl:text-left">
 			<Circles />
 			<motion.div 
 				variants={fadeIn('right', 0.2)} 
@@ -181,7 +188,7 @@ const About = () => {
 						exit="hidden" 
 						className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
 							Cultivating my career over a decade, I´m Herman Morales, a frontend and mobile developer with a fervor for Elixir development. 
-							I`ve freelanced, consulted for startups, and co-authored digital solutions for diverse clients.
+							I´ve freelanced, consulted for startups, and co-authored digital solutions for diverse clients.
 					</motion.p>
 					<motion.div 
 						variants={fadeIn('right', 0.6)} 
@@ -262,6 +269,8 @@ const About = () => {
 				</motion.div>
 			</div>
 		</div>
+		</>
+		
 	);
 };
 

@@ -2,12 +2,11 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import {
-	HiChatBubbleBottomCenterText,
 	HiEnvelope,
 	HiHome,
 	HiRectangleGroup,
 	HiUser,
-	HiViewColumns,
+	HiViewColumns
 } from 'react-icons/hi2';
 
 // nav data
@@ -16,11 +15,6 @@ export const navData = [
   { name: 'about', path: '/about', icon: <HiUser /> },
   { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
   { name: 'work', path: '/work', icon: <HiViewColumns /> },
-  {
-    name: 'testimonials',
-    path: '/testimonials',
-    icon: <HiChatBubbleBottomCenterText />,
-  },
   {
     name: 'contact',
     path: '/contact',
