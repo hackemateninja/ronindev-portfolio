@@ -4,7 +4,7 @@ const Bulb = () => {
   return (
 		<div className="bulb">
 			<Image 
-				src="/bulb.png"
+				src="/bulb.webp"
 				width={260}
 				height={260}
 				className="w-full h-full"

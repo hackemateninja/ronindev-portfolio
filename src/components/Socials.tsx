@@ -16,28 +16,28 @@ import {
 const Socials = () => {
   return (
 		<div className="flex items-center gap-x-5 text-lg">
-			<Link href={'https://blog.ronindev.ninja/'} className="hover:text-accent transition-all duration-300">
+			<Link aria-label="Blog" href={'https://blog.ronindev.ninja/'} className="hover:text-accent transition-all duration-300">
 				<SiGhost />
 			</Link>
-			<Link href={'https://www.youtube.com/@ronindevninja'} className="hover:text-accent transition-all duration-300">
+			<Link aria-label="Youtube"  href={'https://www.youtube.com/@ronindevninja'} className="hover:text-accent transition-all duration-300">
 				<RiYoutubeLine />
 			</Link>
-			<Link href={'https://www.threads.net/@ronindevninja'} className="hover:text-accent transition-all duration-300">
+			<Link aria-label="Threads"  href={'https://www.threads.net/@ronindevninja'} className="hover:text-accent transition-all duration-300">
 				<RiInstagramLine />
 			</Link>
-			<Link href={'https://www.linkedin.com/in/hackemate/'} className="hover:text-accent transition-all duration-300">
+			<Link aria-label="Linkdin"  href={'https://www.linkedin.com/in/hackemate/'} className="hover:text-accent transition-all duration-300">
 				<RiLinkedinLine />
 			</Link>
-			<Link href={'https://twitter.com/Hackemateninja'} className="hover:text-accent transition-all duration-300">
+			<Link aria-label="X"  href={'https://twitter.com/Hackemateninja'} className="hover:text-accent transition-all duration-300">
 				<RiTwitterLine />
 			</Link>
-			<Link href={'https://github.com/hackemateninja'} className="hover:text-accent transition-all duration-300">
+			<Link aria-label="Github"  href={'https://github.com/hackemateninja'} className="hover:text-accent transition-all duration-300">
 				<RiGithubLine />
 			</Link>
-			<Link href={'https://stackoverflow.com/users/6427944/hackemate'} className="hover:text-accent transition-all duration-300">
+			<Link aria-label="StackOverflow"  href={'https://stackoverflow.com/users/6427944/hackemate'} className="hover:text-accent transition-all duration-300">
 				<RiStackOverflowLine />
 			</Link>
-			<Link href={'https://www.tiktok.com/@ronindevninja'} className="hover:text-accent transition-all duration-300">
+			<Link aria-label="TikTok"  href={'https://www.tiktok.com/@ronindevninja'} className="hover:text-accent transition-all duration-300">
 				<RiTiktokLine />
 			</Link>
 			

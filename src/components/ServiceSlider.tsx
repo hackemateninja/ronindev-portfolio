@@ -69,7 +69,7 @@ const ServiceSlider = () => {
 		>
 			{serviceData.map((item, index) => (
 				<SwiperSlide key={index}>
-					<Link href="/contact" >
+					<Link aria-label='contact' href="/contact" >
 						<div className='bg-[rgba(65,47,123,0.15)] max-h-[275px] rounded-lg 
 					px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-grab 
 					hover:bg-[rgba(89, 65, 169, 0.15)] transition-all duration-300'>

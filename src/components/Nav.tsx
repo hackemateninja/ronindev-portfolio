@@ -35,6 +35,7 @@ const Nav = () => {
 			text-3xl xl:text-xl xl:rounded-full'>
 				{navData.map((link) => {
 					return <Link 
+						aria-label={link.name}
 						className={`${
 							link.path === pathName && 'text-accent'
 						} relative flex items-center group hover:text-accent transition-all duration-300`} 

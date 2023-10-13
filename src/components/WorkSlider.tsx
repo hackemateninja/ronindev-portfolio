@@ -18,22 +18,22 @@ const workSlides = {
       images: [
         {
           title: 'Bushido Labas',
-          path: '/bushidolabs.jpeg',
+          path: '/bushidolabs.webp',
 					link: 'https://bushidolabs.dev/'
         },
         {
           title: 'Agrotoken',
-          path: '/agrotoken.jpeg',
+          path: '/agrotoken.webp',
 					link: 'https://agrotoken.com/'
         },
         {
           title: 'Carcom',
-          path: '/carcom.jpeg',
+          path: '/carcom.webp',
 					link: 'https://www.car.com/'
         },
         {
           title: 'UsedCars',
-          path: '/usedcars.jpeg',
+          path: '/usedcars.webp',
 					link: 'https://www.usedcars.com/'
         },
       ],
@@ -62,7 +62,7 @@ const WorkSlider = () => {
 									opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
 									<div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10
 									group-hover:xl:-translate-y-20 transition-all duration-300'>
-										<Link href={images.link} target='_blank'>
+										<Link aria-label='project live link' href={images.link} target='_blank'>
 											<div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
 											<div className='delay-100'>LIVE</div>
 											<div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>

@@ -4,7 +4,7 @@ const Circles = () => {
   return (
 		<div className='circles'>
 			<Image 
-				src={'/circles.png'}
+				src={'/circles.webp'}
 				width={260}
 				height={200}
 				className='w-full h-full'
