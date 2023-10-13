@@ -180,8 +180,8 @@ const About = () => {
 						animate="show"
 						exit="hidden" 
 						className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-							Cultivating my career over a decade, I'm Herman Morales, a frontend and mobile developer with a fervor for Elixir development. 
-							I've freelanced, consulted for startups, and co-authored digital solutions for diverse clients.
+							Cultivating my career over a decade, I´m Herman Morales, a frontend and mobile developer with a fervor for Elixir development. 
+							I`ve freelanced, consulted for startups, and co-authored digital solutions for diverse clients.
 					</motion.p>
 					<motion.div 
 						variants={fadeIn('right', 0.6)} 
