@@ -27,8 +27,8 @@ const Work = () => {
 							animate='show'
 							exit='hidden'  
 							className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-							Esse enim perferendis dolorum necessitatibus laudantium, 
+							These are my most recent projects, which I have done in collaboration and some are personal projects.
+							Click on each one to see them live.
 						</motion.p>
 					</div>
 					<motion.div

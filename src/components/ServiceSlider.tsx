@@ -6,14 +6,16 @@ import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 
+import Link from 'next/link'
+
 
 // icons
 import {
 	RxArrowTopRight,
 	RxCrop,
 	RxDesktop,
+	RxMobile,
 	RxPencil2,
-	RxReader,
 	RxRocket
 } from "react-icons/rx"
 
@@ -22,28 +24,28 @@ import {
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Frontend',
+    description: 'Creation of beauty web experiences with most newest technologies.',
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Backend',
+    description: 'Creation of powerful realtime services for your product.',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxMobile />,
+    title: 'Mobile',
+    description: 'Creation of apps that break the boundaries of your product.',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'Document writing',
+    description: 'Bloggin for your product, company or your tech.',
   },
   {
     icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Technological advice',
+    description: 'Training and classes for your team of programmers.',
   },
 ];
 
@@ -67,7 +69,8 @@ const ServiceSlider = () => {
 		>
 			{serviceData.map((item, index) => (
 				<SwiperSlide key={index}>
-					<div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg 
+					<Link href="/contact" >
+						<div className='bg-[rgba(65,47,123,0.15)] max-h-[275px] rounded-lg 
 					px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-grab 
 					hover:bg-[rgba(89, 65, 169, 0.15)] transition-all duration-300'>
 						<div className="text-4xl text-accent mb-4">{item.icon}</div>
@@ -79,6 +82,7 @@ const ServiceSlider = () => {
 							<RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
 						</div>
 					</div>
+					</Link>
 				</SwiperSlide>
 			))}
 		</Swiper>

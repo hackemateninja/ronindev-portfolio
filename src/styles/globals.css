@@ -48,4 +48,12 @@
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
+	.bulb{
+		@apply absolute -left-36 -bottom-12 rotate-12 
+		mix-blend-color-dodge animate-pulse duration-75 z-10 w-[200px] xl:w-[260px];
+	}
+	.circles{
+		@apply w-[200px] xl:w-[300px] absolute -right-16 
+		-bottom-2 mix-blend-color-dodge animate-pulse duration-75 z-10;
+	}
 }

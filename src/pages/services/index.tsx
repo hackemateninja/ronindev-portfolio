@@ -27,8 +27,7 @@ const Services = () => {
 							animate='show'
 							exit='hidden'  
 							className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-							Esse enim perferendis dolorum necessitatibus laudantium, 
+							These are all the services I offer, feel free to contact me so we can talk about your next project. 
 						</motion.p>
 					</div>
 					<motion.div

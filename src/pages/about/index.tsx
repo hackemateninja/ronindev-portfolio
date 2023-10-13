@@ -6,22 +6,25 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
 	FaCss3,
-	FaFigma,
 	FaHtml5,
 	FaJs,
+	FaNodeJs,
 	FaReact,
-	FaWordpress
 } from "react-icons/fa";
 
 import {
-	SiAdobephotoshop,
-	SiAdobexd,
-	SiFramer,
+	SiCsharp,
+	SiElixir,
+	SiErlang,
+	SiFsharp,
+	SiKotlin,
 	SiNextdotjs,
+	SiPhoenixframework,
+	SiSwift,
+	SiTypescript
 } from "react-icons/si";
 
 import CountUp from "react-countup";
-
 
 //  data
 const aboutData = [
@@ -29,22 +32,31 @@ const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Frontend Development',
 				stage: '',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
+					<SiTypescript />,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
         ],
       },
       {
-        title: 'UI/UX Design',
+        title: 'Backend Development',
 				stage: '',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<SiElixir />, <SiErlang />, <SiPhoenixframework/>, <FaNodeJs />],
+      },
+			{
+        title: 'Mobile Development',
+				stage: '',
+        icons: [<SiPhoenixframework/>, <SiKotlin/>, <SiSwift/>, <FaReact />],
+      },
+			{
+        title: 'Game & Desktop development',
+				stage: '',
+        icons: [<SiFsharp />, <SiCsharp />],
       },
     ],
   },
@@ -52,13 +64,8 @@ const aboutData = [
     title: 'awards',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-				icons: []
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Developer of the month - Autoweb',
+        stage: '2021 - 2022',
 				icons: []
       },
     ],
@@ -67,38 +74,73 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Elixir Developer - BushidoLabs LLC',
+        stage: 'Dec 2022 - Present',
 				icons: []
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'React Developer - Agrotoken',
+        stage: 'Apr 2022 - Nov 2022',
 				icons: []
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'UX-UI Developer - Autoweb',
+        stage: 'Mar 2021 - Apr 2022',
+				icons: []
+      },
+			{
+        title: 'React Native Advisor - Puzzle',
+        stage: 'Jan 2021 - Oct 2021',
+				icons: []
+      },
+			{
+        title: 'Lead React Native - Habits.IA',
+        stage: 'May 2020 - Oct 2020',
+				icons: []
+      },
+			{
+        title: 'React Native Developer - Geeksyte',
+        stage: 'Nov 2018 - Dic 2019',
+				icons: []
+      },
+			{
+        title: 'Frontend Developer - Salomondrin',
+        stage: 'Feb 2017 - Jun 2018',
+				icons: []
+      },
+			{
+        title: 'Freelance Frontend Developer - Self Employee',
+        stage: 'Jan 2011 - Jan 2016',
 				icons: []
       },
     ],
   },
   {
-    title: 'credentials',
+    title: 'education',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Elixir Developer - Pragmatic Studio',
+        stage: '2022 - Present',
+				icons: []
+      },
+			{
+        title: 'C#, F#, WPF Path - Pluralsight',
+        stage: '2022 - 2023',
 				icons: []
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Frontend Developer Expert - Frontend Masters',
+        stage: '2016 - 2019',
+				icons: []
+      },
+			{
+        title: 'Node.js Developer Path - Pluralsight',
+        stage: '2015 - 2016',
 				icons: []
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Systems Engineering - Universidad Mariano Gálvez',
+        stage: '2014 - 2016',
 				icons: []
       },
     ],
@@ -119,7 +161,7 @@ const About = () => {
 				initial="hidden"
 				animate="show"
 				exit="hidden" 
-				className="hidden xl:flex absolute bottom-0 -left-[368px]">
+				className="hidden xl:flex absolute bottom-0 -left-[300px]">
 				<Avatar />
 			</motion.div>
 			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
@@ -130,8 +172,7 @@ const About = () => {
 						animate="show"
 						exit="hidden" 
 						className="h2">
-						Captiving <span className="text-accent">stories</span> birth 
-						magnificient designs.
+						Developing <span className="text-accent">code</span> bringing ideas to life.
 					</motion.h2>
 					<motion.p
 						variants={fadeIn('right', 0.4)} 
@@ -139,9 +180,8 @@ const About = () => {
 						animate="show"
 						exit="hidden" 
 						className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-							10 years ago, I began freelancing as a developer. Since then, I have 
-							done remote work for agencies, counsulted for starttups, and 
-							collaborated on digital producst for business and consumer use.
+							Cultivating my career over a decade, I'm Herman Morales, a frontend and mobile developer with a fervor for Elixir development. 
+							I've freelanced, consulted for startups, and co-authored digital solutions for diverse clients.
 					</motion.p>
 					<motion.div 
 						variants={fadeIn('right', 0.6)} 
@@ -162,7 +202,7 @@ const About = () => {
 							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 
 							after:absolute after:top-0 after:right-0">
 								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-									<CountUp start={0} end={50} duration={5}/> +
+									<CountUp start={0} end={10} duration={5}/> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Satisfied clients</div>
 							</div>
@@ -170,7 +210,7 @@ const About = () => {
 							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 
 							after:absolute after:top-0 after:right-0">
 								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-									<CountUp start={0} end={75} duration={5}/> +
+									<CountUp start={0} end={12} duration={5}/> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Finished projects</div>
 							</div>
