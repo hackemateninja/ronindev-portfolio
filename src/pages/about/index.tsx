@@ -97,12 +97,12 @@ const aboutData = [
 				icons: []
       },
 			{
-        title: 'Lead React Native - Habits.IA',
+        title: 'React Native developer - Habits.IA',
         stage: 'May 2020 - Oct 2020',
 				icons: []
       },
 			{
-        title: 'React Native Developer - Geeksyte',
+        title: 'Frontend developer - Geeksyte',
         stage: 'Nov 2018 - Dic 2019',
 				icons: []
       },
