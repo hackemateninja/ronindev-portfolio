@@ -16,6 +16,7 @@ export default function Document() {
 				<meta property="og:title" content="Ronindev Elixir developer Portfolio" />
 				<meta property="og:description" content="Frontend developer, passionate about Elixir and Phoenix portfolio" />
 				<meta property="og:url" content="https://ronindev.ninja" />
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3468045579720888"></script>
 			</Head>
 			
       <body>
