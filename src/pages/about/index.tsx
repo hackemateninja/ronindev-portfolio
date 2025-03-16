@@ -6,24 +6,28 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
 	FaCss3,
+	FaFigma,
 	FaHtml5,
 	FaJs,
 	FaNodeJs,
 	FaReact,
+	FaVuejs,
 } from "react-icons/fa";
 
 import {
-	SiCsharp,
+	SiAlpinedotjs,
+	SiCanva,
 	SiElixir,
 	SiErlang,
-	SiFsharp,
-	SiGodotengine,
+	SiGimp,
 	SiKotlin,
-	SiMonogame,
-	SiNextdotjs,
+	SiLaravel,
 	SiPhoenixframework,
+	SiPhp,
+	SiSvelte,
 	SiSwift,
 	SiThreedotjs,
+	SiWordpress
 } from "react-icons/si";
 
 import Head from "next/head";
@@ -34,6 +38,15 @@ const aboutData = [
   {
     title: 'skills',
     info: [
+			{
+        title: 'Web designer',
+				stage: '',
+        icons: [
+          <FaFigma key={0} />,
+          <SiGimp key={1}/>,
+					<SiCanva key={2} />
+        ],
+      },
       {
         title: 'Frontend Development',
 				stage: '',
@@ -43,41 +56,37 @@ const aboutData = [
 					<SiThreedotjs key={2} />,
           <FaJs key={3} />,
           <FaReact key={4}/>,
-          <SiNextdotjs key={5}/>,
+					<SiSvelte key={6} />,
+					<FaVuejs key={7} />,
+					<SiAlpinedotjs key={8} />
         ],
       },
       {
         title: 'Backend Development',
 				stage: '',
-        icons: [<SiElixir key={0} />, <SiErlang key={1} />, <SiPhoenixframework key={2} />, <FaNodeJs key={3} />],
+        icons: [
+					<SiElixir key={0} />, 
+					<SiErlang key={1} />, 
+					<SiPhoenixframework key={2} />, 
+					<FaNodeJs key={3} />, 
+					<SiPhp key={4} />, 
+					<SiLaravel key={5} />, 
+					<SiWordpress key={6} />
+				],
       },
 			{
         title: 'Mobile Development',
 				stage: '',
         icons: [<SiPhoenixframework key={0} />, <SiKotlin key={1} />, <SiSwift key={2} />, <FaReact key={3} />],
       },
-			{
-        title: 'Game & Desktop development',
-				stage: '',
-        icons: [<SiFsharp key={0} />, <SiCsharp key={1} />, <SiGodotengine key={2} />, <SiMonogame key={3} />],
-      },
-    ],
-  },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Developer of the month - Autoweb',
-        stage: '2021 - 2022',
-				icons: []
-      },
+
     ],
   },
   {
     title: 'experience',
     info: [
       {
-        title: 'Elixir Developer - BushidoLabs LLC',
+        title: 'Full Stack developer - BushidoLabs LLC',
         stage: 'Dec 2022 - Present',
 				icons: []
       },
@@ -107,12 +116,12 @@ const aboutData = [
 				icons: []
       },
 			{
-        title: 'Frontend Developer - Salomondrin',
+        title: 'Laravel developer - Salomondrin',
         stage: 'Feb 2017 - Jun 2018',
 				icons: []
       },
 			{
-        title: 'Freelance Frontend Developer - Self Employee',
+        title: 'Wordpress Developer - Self Employee',
         stage: 'Jan 2011 - Jan 2016',
 				icons: []
       },
@@ -121,6 +130,11 @@ const aboutData = [
   {
     title: 'education',
     info: [
+			{
+        title: 'Laravel Architect - Laracast',
+        stage: '2024 - Present',
+				icons: []
+      },
       {
         title: 'Elixir Developer - Pragmatic Studio',
         stage: '2022 - Present',
@@ -187,8 +201,9 @@ const About = () => {
 						animate="show"
 						exit="hidden" 
 						className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-							Cultivating my career over a decade, I´m Herman Morales, a frontend and mobile developer with a fervor for Elixir development. 
-							I´ve freelanced, consulted for startups, and co-authored digital solutions for diverse clients.
+							Crafting innovative solutions for years, I´m a developer with a passion for building great things. With experience in Elixir, 
+							Go, JavaScript, and PHP, I´ve worked as a freelancer, consultant, and contributor to various projects—turning ideas into powerful
+							 digital experiences.
 					</motion.p>
 					<motion.div 
 						variants={fadeIn('right', 0.6)} 

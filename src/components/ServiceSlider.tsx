@@ -25,27 +25,27 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Frontend',
-    description: 'Creation of beauty web experiences with most newest technologies.',
+    description: 'Creation of beauty web experiences with most newest technologies, Templates and layouts',
   },
   {
     icon: <RxDesktop />,
     title: 'Backend',
-    description: 'Creation of powerful realtime services for your product.',
+    description: 'Creation of powerful modern apps and integrations for your product',
   },
   {
     icon: <RxMobile />,
     title: 'Mobile',
-    description: 'Creation of apps that break the boundaries of your product.',
+    description: 'Creation of cross platform apps that break the boundaries of your product.',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Document writing',
-    description: 'Bloggin for your product, company or your tech.',
+    title: 'Wordpress developer',
+    description: 'Creating Cool themes, blocks and plugins for your digital product',
   },
   {
     icon: <RxRocket />,
     title: 'Technological advice',
-    description: 'Training and classes for your team of programmers.',
+    description: 'Training, help and classes for you and your team of junior programmers.',
   },
 ];
 
@@ -70,7 +70,7 @@ const ServiceSlider = () => {
 			{serviceData.map((item, index) => (
 				<SwiperSlide key={index}>
 					<Link aria-label='contact' href="/contact" >
-						<div className='bg-[rgba(65,47,123,0.15)] max-h-[275px] rounded-lg 
+						<div className='bg-[rgba(65,47,123,0.15)] max-h-[300px] rounded-lg 
 					px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-grab 
 					hover:bg-[rgba(89, 65, 169, 0.15)] transition-all duration-300'>
 						<div className="text-4xl text-accent mb-4">{item.icon}</div>

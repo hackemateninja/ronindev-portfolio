@@ -9,7 +9,7 @@ export default function Home() {
   return (
 		<>
 			<Head>
-				<title>Ronindev Home - Elixir developer</title>
+				<title>Ronindev Home - Full Stack ninja developer</title>
 			</Head>
 			<div className="bg-primary/60 h-full">
 				<div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
@@ -21,7 +21,7 @@ export default function Home() {
 							exit='hidden'
 							className="h1">
 							Transforming Code <br /> Into{' '} 
-							<span className="text-accent">Pieces of art.</span>
+							<span className="text-accent">Real products</span>
 						</motion.h1>
 						<motion.p
 							variants={fadeIn('down', 0.3)} 
@@ -29,9 +29,8 @@ export default function Home() {
 							animate='show' 
 							exit='hidden'
 							className="max-w-sm xl:max-w-xl mx-auto xl:auto xl:mx-0 mb-10 xl:mb-16">
-							An experienced Frontend Developer dedicated to crafting high-performance web applications. 
-							With a passion for Elixir, I embrace elegant solutions and aim to push the boundaries of web development, 
-							transforming digital ideas into exceptional user experiences.
+							A versatile developer with a passion for creating exceptional digital experiences. With expertise in Elixir, Go, JavaScript, and PHP, 
+							I thrive on building innovative solutions and pushing the boundaries of development to bring ideas to life.
 						</motion.p>
 						<div className="flex justify-center xl:hidden relative">
 							<ProjectsBtn />
